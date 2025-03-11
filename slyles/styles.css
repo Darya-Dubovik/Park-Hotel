@@ -1,0 +1,718 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1176px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+header {
+    background-color: rgba(32, 83, 80, 0.5);
+    padding: 30px 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header a:not(:last-child)::after {
+    display: inline-block;
+    content: " ";
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 0 45px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 25px 0;
+    }
+    header a {
+        font-size: 18px;
+    }
+    header a:not(:last-child)::after {
+        width: 25px;
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+    header a {
+        font-size: 15px;
+    }
+    header a:not(:last-child)::after {
+        width: 20px;
+        height: 1px;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    header a, header a:not(:last-child)::after  {
+        display: block;
+        margin: 0 auto;
+    }
+    header a:not(:last-child)::after {
+        margin: 15px auto;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.park-hotel {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 450px 0 130px;
+}
+
+.park-hotel p {
+    margin: 30px auto 60px;
+    max-width: 495px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.park-hotel a {
+    display: block;
+    width: 312px;
+    height: 60px;
+    background: rgba(174, 95, 61, 1);
+    border-radius: 30px;
+    line-height: 60px;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.park-hotel a::after {
+    display: block;
+    content: "";
+    width: 57px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/arrow.png");
+    color: rgba(255, 255, 255, 1);
+    margin: 80px auto 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    .park-hotel h1 {
+        font-size: 45px;
+    }
+    .park-hotel {
+        padding: 353px 0 85px;
+    }
+    .park-hotel p {
+        font-size: 18px;
+        margin: 20px auto 45px;
+        max-width: 356px;
+    }
+    .park-hotel a {
+        width: 248px;
+        height: 48px;
+        font-size: 17px;
+        line-height: 48px;
+    }
+    .park-hotel a::after {
+        margin: 40px auto 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .park-hotel {
+        padding: 249px 0 72px;
+    }
+    .park-hotel p {
+        margin: 20px auto 35px;
+    }
+    .park-hotel a::after {
+        margin: 27px auto 0px;
+    }
+}
+
+.text {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.about-us h2 {
+    margin: 30px 0 37px;
+}
+
+.about-us p {
+    max-width: 608px;
+    margin: 0 auto;
+}
+
+.about-us img {
+    max-width: 617px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 35px;
+    }
+    .text {
+        font-size: 22px;
+    }
+    .about-us p {
+        max-width: 537px;
+    }
+    .about-us img {
+        max-width: 553px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-us h2 {
+        margin: 25px 0 32px;
+    }
+    .about-us p {
+        max-width: 571px;
+    }
+    .about-us img {
+        max-width: 486px;
+    }
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.entertainments {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.entertainments .text {
+    max-width: 520px;
+    margin: 37px auto 30px;
+}
+
+.entertainments p {
+    font-size: 1rem;
+}
+
+.entertainments-type {
+    display: inline-block;
+    width: calc((100% - 2 * 24px) / 3);
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(241, 241, 241, 1);
+    border-radius: 30px;
+    padding: 30px 5px;
+    max-width: 444px;
+}
+
+.entertainments-type:not(:last-child) {
+    margin-right: 24px;
+}
+
+.entertainments-type h3 {
+    margin: 25px 0 20px;
+}
+
+.entertainments-type i {
+    font-size: 150px;
+    color: rgba(174, 95, 61, 1);
+}
+
+@media screen and (max-width: 1024px) {
+    .entertainments .text {
+        max-width: 456px;
+    }
+    .entertainments p {
+        font-size: 16px;
+    }
+    .entertainments-type {
+        width: calc((100% - 2 * 20px) / 3);
+    }
+    .entertainments-type:not(:last-child) {
+        margin-right: 20px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .entertainments-type h3 {
+        margin: 15px 0;
+    }
+    .entertainments-type i {
+        font-size: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .entertainments .text {
+        max-width: 520px;
+        margin: 32px auto 35px;
+    }
+    .entertainments p {
+        font-size: 23px;
+    }
+    .entertainments-type {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .entertainments-type:not(:last-child) {
+        margin: 0 auto 30px;
+    }
+    .entertainments-type h3 {
+        font-size: 23x;
+        margin: 25px 0 20px;
+    }
+    .entertainments-type i {
+        font-size: 150px;
+    }
+}
+
+@media screen and (max-width: 1141px) {
+    .entertainments p {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .entertainments p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .entertainments p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .entertainments p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 869px) {
+    .entertainments p {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 836px) {
+    .entertainments p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 803px) {
+    .entertainments p {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .entertainments p {
+        font-size: 20px;
+    }
+}
+
+.apartments .text {
+    max-width: 617px;
+    margin: 30px auto 55px;
+}
+
+.apartments-type {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: top;
+    width: calc((100% - 2 * 48px) / 3);
+    text-align: left;
+    position: relative;
+    max-width: 698px;
+}
+
+.apartments-type:not(:last-child) {
+    margin-right: 48px;
+}
+
+.apartments-type::after {
+    content: "";
+    width: 130px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    text-align: center;
+}
+
+.apartments-type:first-of-type::after {
+    content: "от 7 т.р./сутки";
+}
+
+.apartments-type:nth-of-type(2)::after {
+    content: "от 23 т.р./сутки";
+}
+
+.apartments-type:nth-of-type(3)::after {
+    content: "от 13 т.р./сутки";
+}
+
+.apartments-type:nth-of-type(2)::before {
+    content: "VIP";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(242, 64, 64, 1);
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    font-family: "Source Serif Pro";
+    font-size: 14px;
+}
+
+.apartments-type h4 {
+    margin: 25px 0 15px;
+}
+
+.apartments-type img {
+    max-width: 698px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .apartments .text {
+        max-width: 617px;
+        margin: 30px auto;
+    }
+    .apartments-type {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .apartments-type:not(:last-child) {
+        margin: 0 auto 75px;
+    }
+    .apartments-type::after {
+        content: "";
+        width: 150px;
+        height: 34px;
+        font-size: 18px;
+    }
+    .apartments-type:nth-of-type(2)::before {
+        content: "VIP";
+        width: 60px;
+        height: 60px;
+        top: -30px;
+        left: -30px;
+        line-height: 60px;
+        font-size: 16px;
+    }
+    .apartments-type h4 {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .apartments .text {
+        max-width: 501px;
+        margin: 25px auto 30px;
+    }
+    .apartments-type {
+        max-width: 590px;
+    }
+    .apartments-type:nth-child(1) {
+        margin-bottom: 80px;
+    }
+    .apartments-type:nth-child(2) {
+        margin-bottom: 60px;
+    }
+    .apartments-type::after {
+        content: "";
+        width: 168px;
+        height: 36px;
+        font-size: 20px;
+    }
+    .apartments-type:nth-of-type(2)::before {
+        font-size: 18px;
+    }
+    .apartments-type h4 {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .apartments-type:nth-of-type(2)::before {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+form {
+    max-width: 1016px;
+    padding: 100px 121px 100px 119px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 30px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.user-input:focus {
+    outline-color: red;
+}
+
+form .text {
+    max-width: 572px;
+    margin: 30px auto 50px;
+}
+
+label.user-title  {
+    display: block;
+}
+
+form input {
+    font-size: 22px;
+}
+
+.user-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: rgba(69, 69, 69, 1);
+}
+
+.user-input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgba(174, 95, 61, 1);
+    margin-bottom: 25px;
+    padding-left: 35px;
+    color: rgba(157, 157, 157, 1);
+}
+
+form div {
+    text-align: left;
+}
+
+form div:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+div input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    color: rgba(158, 158, 158, 1);
+}
+
+div label {
+    color: rgba(71, 71, 71, 1);
+    font-size: 1rem;
+}
+
+.button {
+    background-color: rgba(174, 95, 61, 1);
+    color: white;
+    display: block;
+    width: 404px;
+    height: 60px;
+    margin: 40px auto 0;
+    border: solid rgba(174, 95, 61, 1);
+    border-radius: 30px;
+}
+
+.button:hover {
+    background-color: rgb(102, 98, 98);
+    transition: background-color 1s;
+}
+
+.to-book {
+   background-color: rgba(245, 245, 245, 1);
+}
+
+@media screen and (max-width: 1024px) {
+    form {
+        max-width: 820px;
+        padding: 80px 68px 80px 67px;
+    }
+    form .text {
+        margin: 30px auto;
+    }
+    form input {
+        font-size: 18px;
+    }
+    div label {
+        font-size: 18px;
+    }
+    .user-title {
+        font-size: 20px;
+    }
+    .user-input {
+        width: 100%;
+        height: 53px;
+    }
+    .button {
+        width: 324px;
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        max-width: 720px;
+        padding: 70px 52px 70px 53px;
+    }
+    form .text {
+        width: 506px;
+        margin: 25px auto 35px;
+    }
+    form input {
+        font-size: 20px;
+    }
+    div label {
+        font-size: 1rem;
+    }
+    .user-title {
+        font-size: 22px;
+    }
+    .user-input {
+        width: 100%;
+        height: 58px;
+    }
+    .user-input:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    .user-input:nth-child(2) {
+        margin-bottom: 25px;
+    }
+    .button {
+        width: 324px;
+        height: 48px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .to-book .text {
+        display:block;
+        width: 100%;
+    }
+}
+
+footer {
+    padding: 70px 0;
+}
+
+footer nav {
+    width: 150px;
+    margin: 35px auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 0.7px solid rgba(115, 115, 115, 1);
+    border-bottom: 0.7px solid rgba(115, 115, 115, 1);
+}
+
+footer nav a {
+    display: block;
+}
+
+footer nav a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.contacts a {
+    display: inline-block;
+    font-size: 28px;
+}
+
+.contacts a:hover {
+    transform: scale(2);
+}
+
+.contacts a:not(:last-child) {
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 50px 0;
+    }
+    footer nav {
+        width: 140px;
+        margin: 25px auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    footer nav a:not(:last-child) {
+        margin-bottom: 33px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer nav {
+        width: 90px;
+    }
+    footer nav a:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+}
+footer .arrow {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    footer .arrow {
+        font-size: 2rem;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .arrow {
+        right: 25px;
+    }
+}
